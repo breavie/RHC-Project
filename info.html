@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Bruce Reavie">
+        <meta name="description" content="Club Info">
+        <title>RHC</title>
+        <link rel="icon" href="rifle.png" type="image/png">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body> 
+        <header class="header">
+            <section class="header-title-line">
+                <h1 class="header__h1">RHC INFO</h1>
+                <button class="menu-button" title="Open Nav Menu">
+                    <div class="menu-icon"></div>
+                </button>
+            </section>
+    
+            <button class="closeMenuBtn" title="Close Nav Menu" tabindex="-1"></button>
+    
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="">Info</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="alt_header">
+            <uL class="header__ul">              
+                <li>
+                    <a href="index.html">RHC</a>
+                </li>
+                <li>
+                    <a href="members.html">Members</a>
+                </li>
+                <li>
+                    <a href="">INFO</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </uL>
+        </div>
+    
+    <main class="main">
+        <!--Our Content-->
+        <p>Here I will put documents, stats, and contact info that will be
+            private.
+        </p>
+
+        <!-- file download -->
+        <a href="files/Info.txt" target="_blank">View Information</a>
+        <hr>
+        <a href="files/Info.txt" download="">Download Information</a>
+        <hr>
+        <a href="files/Moose Hunt 2022 copy.pdf" download="">Download PDF</a>
+        <a href="files/Moose Hunt 2022 copy.pdf" target="_blank">View PDF</a>
+    <hr>
+        <!-- Display the pdf on the page -->
+    <h2 class="menu_h2">Latest food menu</h2>
+        <iframe class="menupdf" src="files/Moose Hunt 2022 copy.pdf" frameborder"0"></iframe>
+
+    </main>
+    
+
+
+
+    <footer class="footer">
+        <p> 
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">The Reavie Hunt Club</span>             
+    </p>            
+        </p>
+    </footer>
+    
+</body>
+</html>
