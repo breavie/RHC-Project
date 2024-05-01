@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <div class="formFields"> -->
+   
+<html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,44 +47,55 @@
                 </li>
             </uL>
         </div>
-    
-    <main class="main">
-        <!--Our Content-->
-        <p>Here I will put documents, stats, and contact info that will be
-            private.
-        </p>
 
-        <!-- info files -->
-         <div class="info_card">
-            <h3 class="menu_h2">RHC First Meeting</h2>
-            <a href="files/RHC First Meeting.pdf" target="_blank">View PDF</a>
+
+
+<main class="main">
+    <div class="full-screen-container">
+        <div class="login-container">
+            <h1 class="login-title">G-Day!</h1>
+            <article id="login" class="main_login">  
+                <form class="pswrd">
+                    <p class="g-day">You need to enter a password to see this information</p>
+                
+                    <p></p>
+                    <label for="pswd">Enter your password: </label>
+                    <input type="password" id="pswd">
+                    <!-- <input type="button" value="Submit" onclick="checkPswd();" /> -->
+                    <button type="button" value="submit" class="submit_button" onclick="checkPswd()">Submit</button>
+                   
+                </form>
+                
+            </article>
         </div>
-        <div class="info_card">
-            <h3 class="menu_h2">Moose Hunt Stats</h2>
-            <a href="files/Moose Hunts - 2008 - 2023.pdf" target="_blank">View PDF</a>
-        </div>
-       
-    
-        <!-- Display the pdf on the page -->
-        <div class="info_card">
-            <h2 class="menu_h2">Latest food menu</h2>
-            <a href="files/Moose Hunt 2022 copy.pdf" download="">Download PDF</a>
-            <a href="files/Moose Hunt 2022 copy.pdf" target="_blank">View PDF</a>
-        </div>
-        <iframe class="menupdf" src="files/Deer Hunt 2023 copy.pdf" frameborder"0"></iframe>
-    
-    </main>
-    
+    </div>
+
+        <!-- Photos displayed here -->
+</main>
+ 
 
 
 
-    <footer class="footer">
-        <p> 
-            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
-            <span class="nowrap">The Reavie Hunt Club</span>             
-    </p>            
-        </p>
-    </footer>
-    
+
+ <!--Function to check password the already set password is rhunter-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "rhunter";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="info.html";
+        }
+        else{
+            alert("Nope! Wrong Password.");
+        }
+    }
+</script>> 
+<footer class="footer">
+    <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">Reavie Hunt Club 🗡️</span>             
+    </p>
+</footer>
 </body>
+
 </html>
