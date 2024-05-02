@@ -512,8 +512,6 @@ animation: showWelcome 1s ease-in-out 1s forwards;
     align-self: flex-start;
 }
 
-
-
 /* || RHC Info */
 
 .menupdf {
@@ -535,7 +533,39 @@ animation: showWelcome 1s ease-in-out 1s forwards;
     padding-top: 7px;
     gap: 30px;
 }
+.emerg_card {
+    display: flex;
+    flex-direction: column;
+    border: 5px double red;
+    width: 100%;
+    padding: 20px 40px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.phone_card {
+    float: center;
+    width: 90%;
+    border: 3px double yellow;
+    /* display: flex;
+    flex-direction: column; */
+    padding-left: 40px;
+    
+}
+.emerg_h3 {
 
+    color: red;
+}
+.emerg_no {
+    color: yellow;
+}
+.emerg_lnk {
+    color: red;
+}
+.mark {
+    background-color: yellow;
+    
+}
 /* || MEMBERS */
 
 table {
